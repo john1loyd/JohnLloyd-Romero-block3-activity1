@@ -81,4 +81,24 @@
         app:layout_constraintStart_toEndOf="@+id/bt_equal"
         app:layout_constraintTop_toBottomOf="@+id/et_secondNumber" />
 
+    <Button
+        android:id="@+id/bt_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_equal"
+        app:layout_constraintEnd_toEndOf="@+id/bt_plus"
+        app:layout_constraintStart_toStartOf="@+id/bt_plus"
+        app:layout_constraintTop_toBottomOf="@+id/bt_plus" />
+
+    <Button
+        android:id="@+id/bt_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_equal"
+        app:layout_constraintEnd_toEndOf="@+id/bt_minus"
+        app:layout_constraintStart_toStartOf="@+id/bt_minus"
+        app:layout_constraintTop_toBottomOf="@+id/bt_minus" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
