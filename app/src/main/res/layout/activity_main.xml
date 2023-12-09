@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_answer"
+        android:layout_width="142dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/calculator"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/et_secondNumber"
+        app:layout_constraintStart_toEndOf="@+id/et_firstNumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_equal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/equal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_showArithmetic" />
+
+    <EditText
+        android:id="@+id/et_firstNumber"
+        android:layout_width="131dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_showArithmetic"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_secondNumber"
+        android:layout_width="131dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_showArithmetic"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_showArithmetic"
+        android:layout_width="63dp"
+        android:layout_height="33dp"
+        android:text=""
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/bt_equal"
+        app:layout_constraintStart_toStartOf="@+id/bt_equal"
+        app:layout_constraintTop_toBottomOf="@+id/tv_answer" />
+
+    <Button
+        android:id="@+id/bt_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        app:layout_constraintBottom_toTopOf="@+id/bt_equal"
+        app:layout_constraintEnd_toStartOf="@+id/bt_equal"
+        app:layout_constraintTop_toBottomOf="@+id/et_firstNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">JohnLloyd-Block3-Quiz</string>
+    <string name="plus">+</string>
+    <string name="calculator">Calculator</string>
+    <string name="equal">=</string>
+</resources>
